@@ -23,4 +23,41 @@ public class UserLogin {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_login_id", referencedColumnName = "staff_id")
     private Staff staff;
+
+    public long getUserLoginId() {
+        return userLoginId;
+    }
+
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Staff getStaff() {
+        return staff;
+    }
+
+    public void setStaff(Staff staff) {
+        this.staff = staff;
+    }
 }

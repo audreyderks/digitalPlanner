@@ -17,4 +17,23 @@ public class FixedDayOff {
     @ManyToOne
     @JoinColumn(name = "days_of_week_id", unique = true, nullable = false)
     private DaysOfWeek daysOfWeek;
+
+    public long getFixedDayOffId() {
+        return fixedDayOffId;
+    }
+    public Staff getStaff() {
+        return staff;
+    }
+
+    public void setStaff(Staff staff) {
+        this.staff = staff;
+    }
+
+    public DaysOfWeek getDaysOfWeek() {
+        return daysOfWeek;
+    }
+
+    public void setDaysOfWeek(DaysOfWeek daysOfWeek) {
+        this.daysOfWeek = daysOfWeek;
+    }
 }

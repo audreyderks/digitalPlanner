@@ -14,4 +14,16 @@ public class Department {
 
     @Column(name = "department_name", unique = true, nullable = false)
     private String departmentName;
+
+    public long getDepartmentId() {
+        return departmentId;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
 }

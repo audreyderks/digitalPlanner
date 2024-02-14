@@ -33,6 +33,55 @@ public class WorkingDay {
     @Column(nullable = false, name = "end_time")
     private Time endTime;
 
+    public long getWorkingDayId() {
+        return workingDayId;
+    }
 
+    public Planning getPlanning() {
+        return planning;
+    }
 
+    public void setPlanning(Planning planning) {
+        this.planning = planning;
+    }
+
+    public Company getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Company companyId) {
+        this.companyId = companyId;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public boolean isOpen() {
+        return open;
+    }
+
+    public void setOpen(boolean open) {
+        this.open = open;
+    }
+
+    public Time getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Time startTime) {
+        this.startTime = startTime;
+    }
+
+    public Time getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Time endTime) {
+        this.endTime = endTime;
+    }
 }

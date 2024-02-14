@@ -43,4 +43,78 @@ public class Staff {
     @OneToOne(mappedBy = "staff")
     private UserLogin userLogin;
 
+    public long getStaffId() {
+        return staffId;
+    }
+    public StaffFunction getStaffFunction() {
+        return staffFunction;
+    }
+
+    public void setStaffFunction(StaffFunction staffFunction) {
+        this.staffFunction = staffFunction;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public String getStaffName() {
+        return staffName;
+    }
+
+    public void setStaffName(String staffName) {
+        this.staffName = staffName;
+    }
+
+    public String getStaffDetails() {
+        return staffDetails;
+    }
+
+    public void setStaffDetails(String staffDetails) {
+        this.staffDetails = staffDetails;
+    }
+
+    public ContractType getContractType() {
+        return contractType;
+    }
+
+    public void setContractType(ContractType contractType) {
+        this.contractType = contractType;
+    }
+
+    public Statute getStatute() {
+        return statute;
+    }
+
+    public void setStatute(Statute statute) {
+        this.statute = statute;
+    }
+
+    public Staff getPersonResonsible() {
+        return personResonsible;
+    }
+
+    public void setPersonResonsible(Staff personResonsible) {
+        this.personResonsible = personResonsible;
+    }
+
+    public UserLogin getUserLogin() {
+        return userLogin;
+    }
+
+    public void setUserLogin(UserLogin userLogin) {
+        this.userLogin = userLogin;
+    }
 }

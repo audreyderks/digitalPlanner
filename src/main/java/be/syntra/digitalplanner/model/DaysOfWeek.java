@@ -12,4 +12,16 @@ public class DaysOfWeek {
 
     @Column(name = "description")
     private String description;
+
+    public long getDaysOfWeekId() {
+        return daysOfWeekId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

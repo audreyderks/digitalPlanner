@@ -14,4 +14,16 @@ public class Company {
 
     @Column(nullable = false, unique = true, name = "company_name")
     private String name;
+
+    public long getCompanyId() {
+        return companyId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

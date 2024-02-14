@@ -15,4 +15,24 @@ public class ContractType {
 
     @Column(name = "hours_per_week", nullable = false)
     private int hoursPerWeek;
+
+    public long getContractTypeId() {
+        return contractTypeId;
+    }
+
+    public String getContractTypeName() {
+        return contractTypeName;
+    }
+
+    public void setContractTypeName(String contractTypeName) {
+        this.contractTypeName = contractTypeName;
+    }
+
+    public int getHoursPerWeek() {
+        return hoursPerWeek;
+    }
+
+    public void setHoursPerWeek(int hoursPerWeek) {
+        this.hoursPerWeek = hoursPerWeek;
+    }
 }

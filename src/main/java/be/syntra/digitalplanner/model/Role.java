@@ -12,4 +12,16 @@ public class Role {
 
     @Column(name = "role_name", nullable = false, unique = true)
     private String roleName;
+
+    public long getRoleId() {
+        return roleId;
+    }
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
 }

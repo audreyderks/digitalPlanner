@@ -12,4 +12,16 @@ public class Availability {
 
     @Enumerated(EnumType.STRING)
     private AvailabilityType availabilityType;
+
+    public long getAvailabilityId() {
+        return availabilityId;
+    }
+
+    public AvailabilityType getAvailabilityType() {
+        return availabilityType;
+    }
+
+    public void setAvailabilityType(AvailabilityType availabilityType) {
+        this.availabilityType = availabilityType;
+    }
 }

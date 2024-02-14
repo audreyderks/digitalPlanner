@@ -18,4 +18,24 @@ public class Planning {
     @ManyToOne
     @JoinColumn(name = "planningStatusId", nullable=false,unique = true)
     private PlanningStatus planningStatus;
+
+    public long getPlanningId() {
+        return planningId;
+    }
+
+    public Set<WorkingDay> getWorkingDays() {
+        return workingDays;
+    }
+
+    public void setWorkingDays(Set<WorkingDay> workingDays) {
+        this.workingDays = workingDays;
+    }
+
+    public PlanningStatus getPlanningStatus() {
+        return planningStatus;
+    }
+
+    public void setPlanningStatus(PlanningStatus planningStatus) {
+        this.planningStatus = planningStatus;
+    }
 }

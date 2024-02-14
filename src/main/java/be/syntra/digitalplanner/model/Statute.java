@@ -12,4 +12,16 @@ public class Statute {
 
     @Enumerated(EnumType.STRING)
     private StatuteName statuteName;
+
+    public long getStatuteId() {
+        return statuteId;
+    }
+
+    public StatuteName getStatuteName() {
+        return statuteName;
+    }
+
+    public void setStatuteName(StatuteName statuteName) {
+        this.statuteName = statuteName;
+    }
 }
