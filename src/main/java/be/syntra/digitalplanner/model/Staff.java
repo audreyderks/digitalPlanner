@@ -33,6 +33,10 @@ public class Staff {
     private ContractType contractType;
 
     @ManyToOne
+    @JoinColumn(name = "statuteId", nullable = false)
+    private Statute statute;
+
+    @ManyToOne
     @JoinColumn(name = "personResonsibleId", nullable = false)
     private Staff personResonsible;
 
